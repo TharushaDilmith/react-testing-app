@@ -1,9 +1,11 @@
 type GreetProps = {
-  name?: string
-}
+  name?: string;
+};
 
 export const Greet = (props: GreetProps) => {
   return (
-    <div>Hello, {props.name}</div>
-  )
-}
+    <>
+      <div>Hello, {props.name ?? 'world'}</div>
+    </>
+  );
+};
