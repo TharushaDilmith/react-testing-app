@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { logRoles, render, screen } from "@testing-library/react";
 import Users from "./user";
 
 describe("Users", () => {
@@ -23,7 +23,22 @@ const users = ["Tharusha", "Dayan", "Charith"];
 
   test("renders logout button", () => {
     render(<Users users={users} />);
+    //search multiple attributes
     const buttonElement = screen.queryByRole("button", { name: "Logout" });
     expect(buttonElement).toBeNull();
+  });
+
+  test("login button is displayed", async () => {
+    const view = render(<Users users={users} />);
+    //show all roles
+    logRoles(view.container);
+
+    //use for async/timing loading
+    const buttonElement = await screen.findByRole("button", { name: "Logout" }
+    , {timeout: 2000});
+
+    //debug
+    screen.debug();
+    expect(buttonElement).toBeInTheDocument();
   });
 });

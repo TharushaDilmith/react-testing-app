@@ -1,12 +1,10 @@
 import './App.css';
-import Application from './components/application/Application';
-import Users from './components/user/user';
+import { Counter } from './components/counter/counter';
 
 function App() {
   return (
     <div className="App">
-      <Users users={["John Doe", "Jane Doe"]} />
-      <Application />
+      <Counter />
     </div>
   );
 }

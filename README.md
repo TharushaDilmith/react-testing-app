@@ -14,3 +14,13 @@ Show error when tests dont cover the except percentage
 
 # RTL Queries
 using this we can find elements on the page
+
+# getby
+You can search one attribute
+
+# queryBy
+You can search multiple attributes
+
+# extentions
+
+tesing playground extention
