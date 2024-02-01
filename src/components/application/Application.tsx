@@ -8,6 +8,7 @@ const Application = () => {
       <p>Complete the form below to apply for a job</p>
       <span title="close">X</span>
       <img src="https://via.placeholder.com/150" alt="placeholder" />
+      <div data-testid="name">John Doe</div>
       <form>
         <label htmlFor="name">Name: </label>
         <input type="text" id="name" placeholder="Enter your name" value="John Doe" onChange={() => {}} />
