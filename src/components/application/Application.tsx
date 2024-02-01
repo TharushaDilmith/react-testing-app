@@ -8,6 +8,10 @@ const Application = () => {
         <input type="text" id="name" />
       </label>
       <br />
+      <label htmlFor="bio">
+        Bio:</label>
+        <textarea id="bio" name="bio" />
+      <br />
       <label>
         Job Location:
         <select id="job-location">
