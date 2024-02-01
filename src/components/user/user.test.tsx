@@ -14,4 +14,16 @@ const users = ["Tharusha", "Dayan", "Charith"];
     const listItemElements = screen.getAllByRole("listitem");
     expect(listItemElements).toHaveLength(users.length);
   });
+
+  test("renders login button", () => {
+    render(<Users users={users} />);
+    const buttonElement = screen.getByRole("button", { name: "Login" });
+    expect(buttonElement).toBeInTheDocument();
+  });
+
+  test("renders logout button", () => {
+    render(<Users users={users} />);
+    const buttonElement = screen.queryByRole("button", { name: "Logout" });
+    expect(buttonElement).toBeNull();
+  });
 });
