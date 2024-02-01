@@ -6,6 +6,7 @@ const Application = () => {
       <h1>Application</h1>
       <h2>Apply for a job</h2>
       <p>Complete the form below to apply for a job</p>
+      <span title="close">X</span>
       <img src="https://via.placeholder.com/150" alt="placeholder" />
       <form>
         <label htmlFor="name">Name: </label>

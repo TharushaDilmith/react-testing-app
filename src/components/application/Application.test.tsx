@@ -20,6 +20,9 @@ describe("Application", () => {
         );
         expect(paragraphElement).toBeInTheDocument();
 
+        const spanElement = screen.getByTitle("close");
+        expect(spanElement).toBeInTheDocument();
+
         const imageElement = screen.getByAltText("placeholder");
         expect(imageElement).toBeInTheDocument();
 
