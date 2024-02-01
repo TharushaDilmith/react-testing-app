@@ -4,6 +4,17 @@ import Application from "./Application";
 describe("Application", () => {
     test("renders Application component", () => {
         render(<Application />);
+
+        const headingElement = screen.getByRole("heading", {
+            level: 1,
+        });
+        expect(headingElement).toBeInTheDocument();
+
+        const subHeadingElement = screen.getByRole("heading", {
+            level: 2,
+        });
+        expect(subHeadingElement).toBeInTheDocument();
+
         const nameElement = screen.getByRole("textbox", { name: "Name:" });
         expect(nameElement).toBeInTheDocument();
 
