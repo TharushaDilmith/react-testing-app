@@ -15,11 +15,25 @@ describe("Application", () => {
         });
         expect(subHeadingElement).toBeInTheDocument();
 
+        const paragraphElement = screen.getByText(
+            "Complete the form below to apply for a job"
+        );
+        expect(paragraphElement).toBeInTheDocument();
+
+        const imageElement = screen.getByAltText("placeholder");
+        expect(imageElement).toBeInTheDocument();
+
         const nameElement = screen.getByRole("textbox", { name: "Name:" });
         expect(nameElement).toBeInTheDocument();
 
         const nameLabelElement = screen.getByLabelText("Name:" , { selector: "input" });
         expect(nameLabelElement).toBeInTheDocument();
+
+        const nameDisplayElement = screen.getByDisplayValue("John Doe");
+        expect(nameDisplayElement).toBeInTheDocument(); 
+
+        const namePlaceholderElement = screen.getByPlaceholderText("Enter your name");
+        expect(namePlaceholderElement).toBeInTheDocument();
 
         const bioElement = screen.getByRole("textbox", { name: "Bio:" });
         expect(bioElement).toBeInTheDocument();

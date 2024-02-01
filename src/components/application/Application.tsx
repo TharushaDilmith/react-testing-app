@@ -5,9 +5,11 @@ const Application = () => {
     <>
       <h1>Application</h1>
       <h2>Apply for a job</h2>
+      <p>Complete the form below to apply for a job</p>
+      <img src="https://via.placeholder.com/150" alt="placeholder" />
       <form>
         <label htmlFor="name">Name: </label>
-        <input type="text" id="name" />
+        <input type="text" id="name" placeholder="Enter your name" value="John Doe" onChange={() => {}} />
         <br />
         <label htmlFor="bio">Bio:</label>
         <textarea id="bio" name="bio" />
