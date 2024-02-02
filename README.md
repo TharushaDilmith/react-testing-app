@@ -27,3 +27,18 @@ tesing playground extention
 
 # act
 to ensure that all updates related to React components (such as state changes, effects, etc.) are processed and applied before moving on to the next o peration in your test.
+
+## improve code quality
+
+# eslint
+check bugs and suggest code
+
+# prettier
+format the codes
+
+# husky
+use prettier and eslint before the commit changes
+before push it checks the all test cases
+
+# link-staged
+check staging files
