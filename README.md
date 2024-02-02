@@ -24,3 +24,6 @@ You can search multiple attributes
 # extentions
 
 tesing playground extention
+
+# act
+to ensure that all updates related to React components (such as state changes, effects, etc.) are processed and applied before moving on to the next o peration in your test.
